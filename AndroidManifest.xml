@@ -27,8 +27,16 @@
             android:label="CheckBox Activity" >
         </activity>
         <activity
-            android:name=".CatActivity"
+            android:name="com.example.helloworld.CatActivity"
             android:label="Cat Activity" >
+        </activity>
+        <activity
+            android:name="com.example.helloworld.PreferenceActivity"
+            android:label="Preference Activity" >
+        </activity>
+            <activity
+            android:name="com.example.helloworld.TextFileActivity"
+            android:label="TextFile Activity" >
         </activity>
     </application>
 
