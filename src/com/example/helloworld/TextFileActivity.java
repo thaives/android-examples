@@ -21,6 +21,7 @@ public class TextFileActivity extends Activity {
 	private Button button;
 	private Context context;
 
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
