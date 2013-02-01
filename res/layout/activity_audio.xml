@@ -4,22 +4,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <EditText
-        android:id="@+id/editText_FileExample"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.14"
-        android:ems="10"
-        android:inputType="textMultiLine" >
-
-        <requestFocus />
-    </EditText>
-
     <Button
-        android:id="@+id/button_FileExample"
+        android:id="@+id/buttonAudio1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Save" />
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/buttonAudio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/buttonAudio3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
 
 </LinearLayout>

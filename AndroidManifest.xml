@@ -34,9 +34,13 @@
             android:name="com.example.helloworld.PreferenceActivity"
             android:label="Preference Activity" >
         </activity>
-            <activity
+        <activity
             android:name="com.example.helloworld.TextFileActivity"
             android:label="TextFile Activity" >
+        </activity>
+        <activity
+            android:name="com.example.helloworld.AudioActivity"
+            android:label="Audio Activity" >
         </activity>
     </application>
 

@@ -13,6 +13,7 @@ public class MainActivity extends Activity {
 	private Button button1;
 	private Button button2;
 	private Button button3;
+	private Button button5;
 	private Context context;
 
 	@Override
@@ -26,6 +27,8 @@ public class MainActivity extends Activity {
 		button2.setOnClickListener(new MyOnClickListener());
 		button3 = (Button) findViewById(R.id.button3);
 		button3.setOnClickListener(new MyOnClickListener());
+		button5 = (Button) findViewById(R.id.button5);
+		button5.setOnClickListener(new MyOnClickListener());
 	}
 
 	@Override
@@ -45,6 +48,8 @@ public class MainActivity extends Activity {
 				startActivity(new Intent(context, PreferenceActivity.class));
 			} else if (arg0.getId() == R.id.button3) {
 				startActivity(new Intent(context, TextFileActivity.class));
+			} else if (arg0.getId() == R.id.button5) {
+				startActivity(new Intent(context, AudioActivity.class));
 			}
 		}
 	}
