@@ -22,16 +22,17 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		context = this;
+		MyOnClickListener listener = new MyOnClickListener();
 		button1 = (Button) findViewById(R.id.button1);
-		button1.setOnClickListener(new MyOnClickListener());
+		button1.setOnClickListener(listener);
 		button2 = (Button) findViewById(R.id.button2);
-		button2.setOnClickListener(new MyOnClickListener());
+		button2.setOnClickListener(listener);
 		button3 = (Button) findViewById(R.id.button3);
-		button3.setOnClickListener(new MyOnClickListener());
+		button3.setOnClickListener(listener);
 		button4 = (Button) findViewById(R.id.button4);
-		button4.setOnClickListener(new MyOnClickListener());
+		button4.setOnClickListener(listener);
 		button5 = (Button) findViewById(R.id.button5);
-		button5.setOnClickListener(new MyOnClickListener());
+		button5.setOnClickListener(listener);
 	}
 
 	@Override

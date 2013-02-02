@@ -53,6 +53,9 @@ public class TextFileActivity extends Activity {
 			}
 			scanner.close();
 			*/
+			
+			// there is also the
+			// deleteFile()  and fileList() methods to use for file i/o
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
