@@ -42,6 +42,10 @@
             android:name="com.example.helloworld.AudioActivity"
             android:label="Audio Activity" >
         </activity>
+        <activity
+            android:name="com.example.helloworld.AnimationActivity"
+            android:label="@string/title_activity_animation" >
+        </activity>
     </application>
 
 </manifest>
