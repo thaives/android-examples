@@ -3,18 +3,21 @@ package com.example.helloworld;
 import java.util.Random;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 public class WebActivity extends Activity {
 
 	private Button button;
 	private WebView webView;
+	private ProgressDialog progress;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,17 +27,29 @@ public class WebActivity extends Activity {
 		// need to add internet user permission for this to work
 		webView = (WebView) findViewById(R.id.webView1);
 		webView.getSettings().setJavaScriptEnabled(true);
+		webView.getSettings().setSupportZoom(true);
+		webView.getSettings().setBuiltInZoomControls(true);
 		webView.setWebViewClient(new WebViewClient() {
+			@Override
 			public void onReceivedError(WebView view, int errorCode,
 					String description, String failingUrl) {
 				Toast.makeText(WebActivity.this, description,
 						Toast.LENGTH_SHORT).show();
 			}
+
+			@Override
+			public void onPageFinished(WebView view, String url) {
+				if (progress != null && progress.isShowing())
+					progress.dismiss();
+			}
+
 		});
 
 		button.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				progress = ProgressDialog.show(WebActivity.this, "",
+						"Loading...", true);
 				Random r = new Random();
 				int num = r.nextInt(3);
 				if (num == 0) {
