@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="17"
         android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -45,6 +46,10 @@
         <activity
             android:name="com.example.helloworld.AnimationActivity"
             android:label="@string/title_activity_animation" >
+        </activity>
+        <activity
+            android:name="com.example.helloworld.WebActivity"
+            android:label="@string/title_activity_web" >
         </activity>
     </application>
 

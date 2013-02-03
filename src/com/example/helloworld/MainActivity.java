@@ -15,6 +15,7 @@ public class MainActivity extends Activity {
 	private Button button3;
 	private Button button4;
 	private Button button5;
+	private Button button6;
 	private Context context;
 
 	@Override
@@ -33,6 +34,9 @@ public class MainActivity extends Activity {
 		button4.setOnClickListener(listener);
 		button5 = (Button) findViewById(R.id.button5);
 		button5.setOnClickListener(listener);
+		button6 = (Button) findViewById(R.id.button6);
+		button6.setOnClickListener(listener);
+
 	}
 
 	@Override
@@ -53,9 +57,11 @@ public class MainActivity extends Activity {
 			} else if (arg0.getId() == R.id.button3) {
 				startActivity(new Intent(context, TextFileActivity.class));
 			} else if (arg0.getId() == R.id.button4) {
-					startActivity(new Intent(context, AnimationActivity.class));
+				startActivity(new Intent(context, AnimationActivity.class));
 			} else if (arg0.getId() == R.id.button5) {
 				startActivity(new Intent(context, AudioActivity.class));
+			} else if (arg0.getId() == R.id.button6) {
+				startActivity(new Intent(context, WebActivity.class));
 			}
 		}
 	}
