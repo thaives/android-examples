@@ -48,14 +48,13 @@ public class WebActivity extends Activity {
 		button.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				progress = ProgressDialog.show(WebActivity.this, "",
-						"Loading...", true);
+				progress = ProgressDialog.show(WebActivity.this, "Progress", "Loading...", true, true);
 				Random r = new Random();
 				int num = r.nextInt(3);
 				if (num == 0) {
-					webView.loadUrl("http://reddit.com");
+					webView.loadUrl("http://www.cnn.com");
 				} else if (num == 1) {
-					webView.loadUrl("http://reddit.com/r/programming");
+					webView.loadUrl("http://www.guardian.co.uk");
 				} else {
 					webView.loadData("<p><b>Not a website!</b>", "text/html",
 							"UTF-8");
