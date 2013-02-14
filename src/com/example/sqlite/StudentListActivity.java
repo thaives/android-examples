@@ -56,8 +56,8 @@ public class StudentListActivity extends ListActivity {
 	}
 
 	@Override
-	protected void onListItemClick(ListView l, View v, int position, long rowId) {
-		super.onListItemClick(l, v, position, rowId);
+	protected void onListItemClick(ListView list, View view, int position, long rowId) {
+		super.onListItemClick(list, view, position, rowId);
 		updateDatabase(rowId, false);
 	}
 
