@@ -1,5 +1,6 @@
 package com.example.helloworld;
 
+import com.example.customview.CustomViewActivity;
 import com.example.sqlite.StudentListActivity;
 
 import android.os.Bundle;
@@ -19,6 +20,7 @@ public class MainActivity extends Activity {
 	private Button button5;
 	private Button button6;
 	private Button button7;
+	private Button button8;
 	private Context context;
 
 	@Override
@@ -41,6 +43,8 @@ public class MainActivity extends Activity {
 		button6.setOnClickListener(listener);
 		button7 = (Button) findViewById(R.id.button7);
 		button7.setOnClickListener(listener);
+		button8 = (Button) findViewById(R.id.button8);
+		button8.setOnClickListener(listener);
 	}
 
 	@Override
@@ -68,6 +72,8 @@ public class MainActivity extends Activity {
 				startActivity(new Intent(context, WebActivity.class));
 			} else if (arg0.getId() == R.id.button7) {
 				startActivity(new Intent(context, StudentListActivity.class));
+			} else if (arg0.getId() == R.id.button8) {
+				startActivity(new Intent(context, CustomViewActivity.class));
 			}
 		}
 	}

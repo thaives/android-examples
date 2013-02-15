@@ -52,6 +52,8 @@
         </activity>
         <activity android:name="com.example.sqlite.StudentUpdateActivity" >
         </activity>
+        <activity android:name="com.example.customview.CustomViewActivity" >
+        </activity>
     </application>
 
 </manifest>
