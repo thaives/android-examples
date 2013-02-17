@@ -56,7 +56,8 @@
         </activity>
         <activity android:name="com.example.tabs.TabHostActivity" >
         </activity>
-        
+        <activity android:name="com.example.tabs.FragmentTabs" >
+        </activity>
     </application>
 
 </manifest>
