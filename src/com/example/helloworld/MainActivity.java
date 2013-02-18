@@ -1,6 +1,7 @@
 package com.example.helloworld;
 
 import com.example.customview.CustomViewActivity;
+import com.example.multitouch.TouchActivity;
 import com.example.sqlite.StudentListActivity;
 import com.example.tabs.FragmentTabs;
 import com.example.tabs.TabHostActivity;
@@ -25,6 +26,7 @@ public class MainActivity extends Activity {
 	private Button button8;
 	private Button button9;
 	private Button button10;
+	private Button button11;
 	private Context context;
 
 	@Override
@@ -53,6 +55,8 @@ public class MainActivity extends Activity {
 		button9.setOnClickListener(listener);
 		button10 = (Button) findViewById(R.id.button10);
 		button10.setOnClickListener(listener);
+		button11 = (Button) findViewById(R.id.button11);
+		button11.setOnClickListener(listener);
 	}
 
 	@Override
@@ -86,6 +90,8 @@ public class MainActivity extends Activity {
 				startActivity(new Intent(context, TabHostActivity.class));
 			} else if (arg0.getId() == R.id.button10) {
 				startActivity(new Intent(context, FragmentTabs.class));
+			} else if (arg0.getId() == R.id.button11) {
+				startActivity(new Intent(context, TouchActivity.class));
 			}
 		}
 	}

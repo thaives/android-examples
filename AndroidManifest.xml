@@ -58,6 +58,8 @@
         </activity>
         <activity android:name="com.example.tabs.FragmentTabs" >
         </activity>
+        <activity android:name="com.example.multitouch.TouchActivity" >
+        </activity>
     </application>
 
 </manifest>
