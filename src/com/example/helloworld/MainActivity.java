@@ -1,6 +1,10 @@
 package com.example.helloworld;
 
+import com.example.customview.CustomViewActivity;
+import com.example.multitouch.TouchActivity;
 import com.example.sqlite.StudentListActivity;
+import com.example.tabs.FragmentTabs;
+import com.example.tabs.TabHostActivity;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -19,6 +23,10 @@ public class MainActivity extends Activity {
 	private Button button5;
 	private Button button6;
 	private Button button7;
+	private Button button8;
+	private Button button9;
+	private Button button10;
+	private Button button11;
 	private Context context;
 
 	@Override
@@ -41,6 +49,14 @@ public class MainActivity extends Activity {
 		button6.setOnClickListener(listener);
 		button7 = (Button) findViewById(R.id.button7);
 		button7.setOnClickListener(listener);
+		button8 = (Button) findViewById(R.id.button8);
+		button8.setOnClickListener(listener);
+		button9 = (Button) findViewById(R.id.button9);
+		button9.setOnClickListener(listener);
+		button10 = (Button) findViewById(R.id.button10);
+		button10.setOnClickListener(listener);
+		button11 = (Button) findViewById(R.id.button11);
+		button11.setOnClickListener(listener);
 	}
 
 	@Override
@@ -68,6 +84,14 @@ public class MainActivity extends Activity {
 				startActivity(new Intent(context, WebActivity.class));
 			} else if (arg0.getId() == R.id.button7) {
 				startActivity(new Intent(context, StudentListActivity.class));
+			} else if (arg0.getId() == R.id.button8) {
+				startActivity(new Intent(context, CustomViewActivity.class));
+			} else if (arg0.getId() == R.id.button9) {
+				startActivity(new Intent(context, TabHostActivity.class));
+			} else if (arg0.getId() == R.id.button10) {
+				startActivity(new Intent(context, FragmentTabs.class));
+			} else if (arg0.getId() == R.id.button11) {
+				startActivity(new Intent(context, TouchActivity.class));
 			}
 		}
 	}
