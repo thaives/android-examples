@@ -45,6 +45,9 @@
             android:label="Audio Activity" >
         </activity>
         <activity
+            android:name="com.example.helloworld.WebActivity" >
+        </activity>
+        <activity
             android:name="com.example.helloworld.AnimationActivity"
             android:label="@string/title_activity_animation" >
         </activity>
